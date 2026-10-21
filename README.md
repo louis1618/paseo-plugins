@@ -4,9 +4,11 @@ Paseo에서 사용할 수 있는 플러그인 세 가지를 `plugins/` 아래에
 
 | 플러그인 | 버전 | 기능 | Paseo 호환성 |
 | --- | ---: | --- | --- |
-| [계정 관리자](plugins/multi-harness-accounts/README.md) · `multi-harness-accounts` | 1.5.10 | Codex·Claude Code 계정, 사용량, 예약 메시지와 확장 관리 | `>=0.10.0`; 예약 전송은 호스트 안전 확장 필요 |
-| [홈 파일](plugins/home-finder/README.md) · `home-finder` | 1.3.1 | 파일 탐색, 미리보기, 이름 변경, 즐겨찾기와 브라우저 다운로드 | `>=0.10.0 <0.12.0` |
-| [시스템 관리](plugins/system-care/README.md) · `system-care` | 1.0.2 | Ubuntu 용량·리소스 진단, Docker 관리와 승인형 정리 | `>=0.10.0 <0.12.0` |
+| [계정 관리자](plugins/multi-harness-accounts/README.md) · `multi-harness-accounts` | 1.5.11 | Codex·Claude Code 계정, 사용량, 예약 메시지와 확장 관리 | `>=0.10.0`; 예약 전송은 호스트 안전 확장 필요 |
+| [홈 파일](plugins/home-finder/README.md) · `home-finder` | 1.3.2 | 파일 탐색, 미리보기, 이름 변경, 즐겨찾기와 브라우저 다운로드 | `>=0.10.0` |
+| [시스템 관리](plugins/system-care/README.md) · `system-care` | 1.0.3 | Ubuntu 용량·리소스 진단, Docker 관리와 승인형 정리 | `>=0.10.0` |
+
+세 플러그인 모두 Paseo 0.12.0 SDK를 사용합니다. 앱과 daemon의 버전 상한은 두지 않으며, 예약 전송은 실제 호스트 안전 기능 지원 여부를 별도로 확인합니다.
 
 ## GitHub에서 설치
 

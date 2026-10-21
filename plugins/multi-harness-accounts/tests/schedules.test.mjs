@@ -243,7 +243,7 @@ test('a quota failure before a manual scheduled-send acknowledgement creates the
 });
 test('unsupported host refuses scheduling and state version 2 migrates atomically', async t => {
   const f = await fixture(t); f.scheduler.dispose(); const unsupported = new ScheduleManager(f.manager, f.now); unsupported.connect(f.paseo); t.after(() => unsupported.dispose());
-  await assert.rejects(unsupported.change({ action: 'save', agentId: f.agent.id, message: 'Continue', dueAt: new Date(NOW + 1000).toISOString() }), /업데이트/);
+  await assert.rejects(unsupported.change({ action: 'save', agentId: f.agent.id, message: 'Continue', dueAt: new Date(NOW + 1000).toISOString() }), /예약 전송 안전 기능/);
   const old = await f.manager.store.read(); old.version = 2; delete old.schedules; await writeFile(join(f.root, 'metadata.json'), JSON.stringify(old));
   await f.manager.store.update(() => {}); assert.equal(JSON.parse(await readFile(join(f.root, 'metadata.json'))).version, 3);
 });

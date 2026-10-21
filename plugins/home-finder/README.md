@@ -4,7 +4,7 @@ Paseo 사이드바의 **파일**에서 데몬 사용자의 홈 폴더를 탐색�
 
 ## 설치 및 갱신
 
-Paseo 0.10.x 또는 0.11.x와 Node.js 22 이상이 필요합니다. 1.3.1부터 개발 SDK·클라이언트·프로토콜을 0.11.1로 맞췄으며 기존 사이드바 API를 유지합니다. Linux 휴지통에는 `gio`, 문서·압축파일 내용 읽기에는 Python 3, PDF 페이지 이미지에는 `pdftoppm`을 사용합니다. 해당 도구가 없으면 다운로드하여 전용 앱에서 열 수 있습니다.
+Paseo 0.10.0 이상와 Node.js 22 이상이 필요합니다. 1.3.2부터 개발 SDK·클라이언트·프로토콜을 0.12.0으로 맞췄으며 기존 사이드바 API를 유지합니다. Linux 휴지통에는 `gio`, 문서·압축파일 내용 읽기에는 Python 3, PDF 페이지 이미지에는 `pdftoppm`을 사용합니다. 해당 도구가 없으면 다운로드하여 전용 앱에서 열 수 있습니다.
 
 ```sh
 paseo plugin install 'github:louis1618/paseo-plugins:plugins/home-finder'
